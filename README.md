@@ -6,3 +6,7 @@ The input to Sardine are the expression matrices and the spatial coordinates mat
 
 As output, Sardine returns an anomaly score for each spot in the dataset, corresponding to how anomalous the spatial region centered around that spot by comparing the spots in the spatial region on the "perturbed" slice to the spots in the spatial region in the "healthy" slice. The way Sardine does this is by estimating spatially restricted probability densities of expression for each condition, and then using these labels to compute the average likelihood of the condition given the observed expression in the perturbed spots. For a more detailed explanation, please see our manuscript. 
 
+This repository contains 3 directories:
+- `/data` which contains the synthetic data used (as well as links to the real data used in the manuscript)
+- `/scripts` which contain code necessary to run Sardine as well as example notebooks on how to do so.
+- `/results` which contain a record of the outputted results for easy comparison
