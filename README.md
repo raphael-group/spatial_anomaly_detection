@@ -10,3 +10,5 @@ This repository contains 3 directories:
 - `/data` which contains the synthetic data used (as well as links to the real data used in the manuscript)
 - `/scripts` which contain code necessary to run Sardine as well as example notebooks on how to do so.
 - `/results` which contain a record of the outputted results for easy comparison
+
+each of these subdirectories also contains a README explaining the file contents.
