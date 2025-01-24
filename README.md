@@ -12,3 +12,5 @@ This repository contains 3 directories:
 - `/results` which contain a record of the outputted results for easy comparison
 
 each of these subdirectories also contains a README explaining the file contents.
+
+note (1/24/25) - additional reproducability code to come shortly.
