@@ -18,4 +18,6 @@ spinal cord GSEA:
 
 `/simulation_anomaly_scores` contains the anomaly scores outputted by Sardine and other methods on the simulation data.
 
-`/visium_anomaly_scores` contains the anomaly scores outputted by Sardine and other methods on the 
+`/visium_anomaly_scores` contains the anomaly scores outputted by Sardine and other methods on real data.
+
+In each case, "anomaly score" reviews to the output of each method that quantifies how anomalous a particular spot is. All methods output a score between 0 and 1, where 1 implies an anomaly. The data is stored as an array of length equal to the number of spots in the perturbed condition, where the indices represent the same order as the original data.  
