@@ -34,7 +34,7 @@ def calculate_anomaly_score_localManifold(coordinates,
 
     Parameters:
     coordinates: a numpy array of size n x 2
-        The numpy array that contains the points to comute the anomaly score at.
+        The numpy array that contains the points to compute the anomaly score at.
     spatial_KDTrees: list of KDTree objects
         This list contains 1 KDTree object per replicate, structured as:
         [condition_0_rep_1_KDTree, condition_0_rep_2_KDTree, ..., condition_1_rep_k_KDTree]
@@ -161,7 +161,6 @@ def calculate_anomaly_score(coordinates,
 
         sample_densities = meld_op.transform(condition_vector)
         sample_likelihoods = meld.utils.normalize_densities(sample_densities[[1,2]])
-        print(f"Computing spot {row}'s' average anomaly score.")
         # get the likelihoods for the perturbed condition
         condition_two_likelihoods_for_cond_two = sample_likelihoods[2].to_numpy()[sample2_indices]
 
