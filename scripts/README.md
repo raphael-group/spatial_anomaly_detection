@@ -7,9 +7,9 @@ A simple implementation of Sardine, using the plug in density estimator MELD [1]
 The key function is `calculate_anomaly_score()`, which takes in the following parameters: 
 
     coordinates: a numpy array of size n x 2
-        The numpy array that contains the points to comute the anomaly score at.
+        The numpy array that contains the points to compute the anomaly score at. In practice, if the slices are already aligned then one can just use the coordinate matrix of any one replicate.
     spatial_KDTrees: list of KDTree objects
-        This list contains 1 KDTree object per replicate, structured as:
+        This list contains 1 KDTree object per each replicate's spatial coordinate matrix, structured as:
         [condition_0_rep_1_KDTree, condition_0_rep_2_KDTree, ..., condition_1_rep_k_KDTree]
     gene_feature_replicate_matrices: list of gene expression matrices
         A list of gene expression matrices, 1 for each coordinate, matching the structure of the spatial_KDTrees list
